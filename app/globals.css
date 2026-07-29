@@ -11,6 +11,10 @@
 		background-color: #00000003;
 	}
 
+	.wrapper{
+		@apply flex flex-col justify-center items-center;
+	}
+
 	::-webkit-scrollbar {
 		width: 2px;
 		height: 2px;

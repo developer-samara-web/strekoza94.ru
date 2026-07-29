@@ -1,0 +1,5 @@
+@reference "../../../app/globals.css";
+
+.section{
+	@apply flex flex-col items-center justify-center w-full py-16;
+}

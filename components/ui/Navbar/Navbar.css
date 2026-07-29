@@ -1,0 +1,17 @@
+@reference "../../../app/globals.css";
+
+.navbar {
+	@apply hidden lg:flex flex-row gap-5;
+}
+
+.navbar__item{
+	@apply uppercase text-xs font-semibold text-[#00000085] py-4 mt-px hover:text-[#7d6adb] hover:border-b hover:border-[#7d6adb];
+}
+
+.navbar-mobile{
+	@apply flex flex-col z-10 lg:hidden absolute left-0 top-30 w-full bg-white p-4 rounded-b-2xl;
+}
+
+.navbar-mobile__button{
+	@apply flex lg:hidden text-slate-900 bg-slate-100 rounded-lg p-2;
+}
