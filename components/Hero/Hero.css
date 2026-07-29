@@ -1,0 +1,21 @@
+@reference "../../app/globals.css";
+
+.hero {
+	@apply py-5 lg:py-20 relative overflow-hidden 2xl:overflow-visible;
+}
+
+.hero__inner{
+	@apply flex flex-col items-center justify-center px-3 lg:px-0 w-full gap-4 before:absolute before:right-[-100] before:top-55 before:h-64 before:w-64 before:-translate-y-1/2 before:bg-[url('/images/hero/hero-cloude-1.png')] before:bg-contain before:bg-no-repeat before:content-[''] after:absolute after:left-[-100] after:top-50 after:h-64 after:w-64 after:-translate-y-1/2 after:bg-[url('/images/hero/hero-cloude-2.png')] after:bg-contain after:bg-no-repeat after:content-['']
+}
+
+.hero__title{
+	@apply text-[30px]/10 lg:text-[70px]/20 font-bold text-center;
+}
+
+.hero__description{
+	@apply text-base text-center lg:text-xl mb-4 lg:mb-10;
+}
+
+.hero__image{
+	@apply pt-10;
+}
