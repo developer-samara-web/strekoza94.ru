@@ -1,0 +1,33 @@
+@reference "../../app/globals.css";
+
+.about{
+	@apply flex flex-col justify-center items-center gap-5 px-4;
+}
+
+.about__description{
+	@apply container w-full flex items-center justify-center text-center sm:text-lg lg:text-xl xl:max-w-[50%] pb-26;
+}
+
+.about-list{
+	@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 container gap-26 lg:gap-10;
+}
+
+.about__item{
+	@apply flex relative flex-col rounded-4xl gap-3 text-white;
+}
+
+.about-item__image{
+	@apply absolute flex justify-center w-full top-[-100];
+}
+
+.about-item__picture{
+	@apply flex items-center justify-center;
+}
+
+.about-item__title{
+	@apply font-bold text-xl;
+}
+
+.about-item__content{
+	@apply p-6 pt-20;
+}
