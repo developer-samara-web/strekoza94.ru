@@ -28,7 +28,7 @@ const About = () => {
 
 	return (
 		<Section className="about">
-			<Title title="Немного о нас" description="Дарим детям улыбки с 2018 года." />
+			<Title title="Немного о нас" description="Дарим детям улыбки с 2018 года." color="text-[#7d6adb]" />
 			<div className="about__description">Детский игровой центр "Стрекоза" предлагает свои услуги по организации праздников для детей от 1 года до 8 лет. Благодаря нашему центру вы сможете провести незабываемый праздник вашему ребёнку в домашней атмосфере.</div>
 			<AboutList abouts={abouts} />
 		</Section>

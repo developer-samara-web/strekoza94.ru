@@ -1,13 +1,13 @@
 @reference "../../../app/globals.css";
 
 .section-title{
-	@apply flex flex-col items-center justify-center;
+	@apply flex flex-col items-center justify-center lg:gap-2;
 }
 
 .section-title__label{
-	@apply font-bold uppercase text-xs text-[#7d6adb];
+	@apply font-bold uppercase text-xs lg:text-sm;
 }
 
 .section-title__heading{
-	@apply font-medium text-center sm:text-2xl lg:text-4xl;
+	@apply font-medium text-center text-2xl sm:text-2xl lg:text-4xl;
 }

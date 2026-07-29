@@ -1,0 +1,29 @@
+@reference "../../app/globals.css";
+
+.events{
+	@apply flex flex-col justify-center items-center gap-5 px-4 py-20;
+}
+
+.events-item{
+	@apply flex flex-col justify-center items-center gap-2 rounded-4xl p-10 bg-white;
+}
+
+.events-item__label{
+	@apply text-xl font-medium text-center;
+}
+
+.events-item__heading{
+	@apply text-center;
+}
+
+.events-list{
+	@apply flex flex-col gap-5 lg:gap-6 container bg-[#fff7e6] rounded-4xl p-5 sm:p-10 xl:p-20;
+}
+
+.events-list__heading{
+	@apply text-lg lg:text-xl text-center;
+}
+
+.events-grid{
+	@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-16;
+}

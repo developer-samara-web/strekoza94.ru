@@ -1,7 +1,7 @@
 @reference "../../app/globals.css";
 
 .about{
-	@apply flex flex-col justify-center items-center gap-5 px-4;
+	@apply flex flex-col justify-center items-center gap-5 px-4 py-20;
 }
 
 .about__description{
