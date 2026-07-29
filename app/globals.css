@@ -1,1 +1,23 @@
 @import "tailwindcss";
+@import "./fonts.css";
+
+@layer base {
+	* {
+		font-family: "Cera Pro";
+		box-sizing: border-box;
+	}
+
+	body{
+		background-color: #00000003;
+	}
+
+	::-webkit-scrollbar {
+		width: 2px;
+		height: 2px;
+	}
+
+	::-webkit-scrollbar-button {
+		width: 2px;
+		height: 2px;
+	}
+}
