@@ -4,6 +4,7 @@ import About from "@/components/About/About";
 import Events from "@/components/Events/Events";
 import Pricing from "@/components/Pricing/Pricing";
 import Gallery from "@/components/Gallery/Gallery";
+import Trial from "@/components/Trial/Trial";
 import Questions from "@/components/Questions/Questions";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
@@ -20,8 +21,9 @@ const Home = () => {
 			<Hero />
 			<About />
 			<Events />
-			<Pricing />
+			<Trial />
 			<Gallery />
+			<Pricing />
 			<Questions />
 			<Contact />
 			<Footer />

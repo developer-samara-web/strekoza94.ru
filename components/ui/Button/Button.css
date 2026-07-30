@@ -1,13 +1,21 @@
 @reference "../../../app/globals.css";
 
 .button{
-	@apply bg-[#7d6adb] hover:bg-[#6e5cc9] rounded-[10px] text-white uppercase font-medium cursor-pointer;
+	@apply uppercase font-medium cursor-pointer;
 }
 
 .button-sm {
-	@apply py-2 px-6 text-xs;
+	@apply py-2 px-6 text-xs rounded-[10px];
 }
 
 .button-md {
-	@apply py-4 px-10 text-sm;
+	@apply py-4 px-10 text-sm rounded-[15px];
+}
+
+.button-primary{
+	@apply bg-[#7d6adb] text-white hover:bg-[#6e5cc9];
+}
+
+.button-secondary{
+	@apply bg-[#7d6adb0d] text-[#7d6adb] hover:bg-[#7d6adb26];
 }

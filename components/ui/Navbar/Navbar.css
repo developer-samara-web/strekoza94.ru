@@ -5,7 +5,7 @@
 }
 
 .navbar__item{
-	@apply uppercase text-xs font-semibold text-[#00000085] py-4 mt-px hover:text-[#7d6adb] hover:border-b hover:border-[#7d6adb];
+	@apply uppercase text-xs font-semibold text-[#0000009c] py-4 mt-px hover:text-[#7d6adb] hover:border-b hover:border-[#7d6adb] hover:mb-[-1px];
 }
 
 .navbar-mobile{

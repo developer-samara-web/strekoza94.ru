@@ -1,0 +1,45 @@
+@reference "../../app/globals.css";
+
+.trial{
+	@apply px-4 py-10;
+}
+
+.trial__row{
+	@apply grid grid-cols-1 lg:grid-cols-2 justify-center text-center lg:text-left items-center gap-5 container;
+}
+
+.trial__image{
+	@apply w-full;
+}
+
+.trial__inner{
+	@apply flex flex-col items-center lg:items-start gap-2;
+}
+
+.trial__text{
+	@apply flex flex-col gap-2;
+}
+
+.trial__title{
+	@apply text-4xl font-medium;
+}
+
+.trial__description{
+	@apply text-xl;
+}
+
+.trial__list{
+	@apply flex flex-col gap-2 py-5;
+}
+
+.trial-list__item{
+	@apply flex text-lg items-center gap-2;
+}
+
+.trial-list__icon{
+	@apply size-6 text-[#008f3f];
+}
+
+.trial_actions{
+	@apply flex flex-col lg:flex-row gap-5 pt-10;
+}

@@ -54,7 +54,7 @@ const Header = () => {
 					<NavbarMobile navbar={navbar} />
 					<Navbar navbar={navbar} />
 					<div className="header__content">
-						<Button type="link" className="button button-sm" url={contacts.buttonPhone} text="Позвонить" />
+						<Button type="link" className="button button-sm button-primary" url={contacts.buttonPhone} text="Позвонить" />
 					</div>
 				</div>
 			</div>
