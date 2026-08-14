@@ -1,33 +1,93 @@
 @reference "../../app/globals.css";
 
-.about{
-	@apply flex flex-col justify-center items-center gap-5 px-4 py-10;
+.about {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-5 px-4 py-10;
 }
 
-.about__description{
-	@apply container w-full flex items-center justify-center text-center sm:text-lg lg:text-xl xl:max-w-[50%] text-[#332b5a];
+
+.about__description {
+	/* Layout */
+	@apply container flex items-center justify-center;
+
+	/* Sizing */
+	@apply w-full xl:max-w-[50%];
+
+	/* Typography */
+	@apply text-center sm:text-lg lg:text-lg;
+
+	/* Color */
+	@apply text-[#000000a6];
 }
 
-.about-list{
-	@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 container gap-26 lg:gap-10 pt-26;
+
+.about__list {
+	/* Layout */
+	@apply container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+
+	/* Spacing */
+	@apply gap-10 pt-26;
+
+	/* Responsive spacing */
+	@apply sm:gap-10 lg:gap-10;
 }
 
-.about__item{
-	@apply flex relative flex-col rounded-4xl gap-3 text-white;
+
+.about__item {
+	/* Layout */
+	@apply relative flex flex-col;
+
+	/* Spacing */
+	@apply gap-3;
+
+	/* Appearance */
+	@apply rounded-4xl border;
+
+	/* Color */
+	@apply text-white;
 }
 
-.about-item__image{
-	@apply absolute flex justify-center w-full top-[-100];
+
+.about-item__image {
+	/* Layout */
+	@apply absolute flex w-full justify-center;
+
+	/* Position */
+	@apply top-[-100];
 }
 
-.about-item__picture{
+
+.about-item__picture {
+	/* Layout */
 	@apply flex items-center justify-center;
 }
 
-.about-item__title{
-	@apply font-bold text-xl text-center;
+
+.about-item__title {
+	/* Typography */
+	@apply text-center text-xl font-bold;
 }
 
-.about-item__content{
-	@apply flex flex-col gap-2 p-6 pt-20 text-center;
+
+.about-item__content {
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-2 p-6 pt-20;
+
+	/* Typography */
+	@apply text-center;
+
+	/* Color */
+	@apply text-[#303030];
+}
+
+
+.about-item__description {
+	/* Typography */
+	@apply text-[#303030];
 }
