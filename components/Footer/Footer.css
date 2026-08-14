@@ -1,0 +1,106 @@
+@reference "../../app/globals.css";
+
+.footer {
+	/* Layout */
+	@apply flex w-full flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply px-4 py-16;
+}
+
+
+.footer__inner {
+	/* Layout */
+	@apply container grid grid-cols-1 items-center lg:grid-cols-2;
+
+	/* Spacing */
+	@apply gap-10;
+}
+
+
+.footer__info {
+	/* Layout */
+	@apply flex flex-col items-center lg:items-start;
+
+	/* Spacing */
+	@apply gap-5;
+}
+
+
+.footer__logo {
+	/* Sizing */
+	@apply h-[40px] w-auto;
+}
+
+
+.footer__description {
+	/* Sizing */
+	@apply w-full lg:w-90;
+
+	/* Typography */
+	@apply text-center text-sm lg:text-left text-[#00000090];
+}
+
+
+.footer__content {
+	/* Layout */
+	@apply flex flex-col items-center lg:items-end;
+
+	/* Spacing */
+	@apply gap-3;
+
+	/* Typography */
+	@apply text-center lg:text-right;
+}
+
+
+.footer__socials {
+	/* Layout */
+	@apply flex flex-row justify-center lg:justify-end;
+
+	/* Spacing */
+	@apply gap-3;
+}
+
+
+.footer__social {
+	/* Layout */
+	@apply flex items-center justify-center;
+
+	/* Sizing */
+	@apply size-[45px];
+
+
+	/* Appearance */
+	@apply rounded-2xl;
+
+	/* Interaction */
+	@apply cursor-pointer transition-colors hover:to-[#5b48b4];
+}
+
+
+.footer__social img {
+	/* Sizing */
+	@apply h-full w-full object-contain;
+}
+
+
+.footer__links {
+	/* Layout */
+	@apply flex flex-col items-center lg:items-end;
+
+	/* Spacing */
+	@apply gap-1;
+}
+
+
+.footer__link {
+	/* Typography */
+	@apply text-xs text-[#715ed2] hover:underline;
+}
+
+
+.footer__copyright {
+	/* Typography */
+	@apply text-sm font-medium text-[#000000bf];
+}
