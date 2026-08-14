@@ -1,25 +1,74 @@
 @reference "../../app/globals.css";
 
-.gallery{
-	@apply flex flex-col justify-center items-center gap-5 px-4 py-16 bg-slate-100 w-full;
+.gallery {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-5 px-4 py-10;
 }
 
-.gallery__inner{
-	@apply flex flex-col items-center container gap-5;
+
+.gallery__inner {
+	/* Layout */
+	@apply container flex flex-col items-center;
+
+	/* Spacing */
+	@apply gap-5;
 }
 
-.gallery__heading{
-	@apply w-full flex items-center justify-center text-center sm:text-lg lg:text-xl xl:max-w-[80%] text-[#332b5a];
+
+.gallery__heading {
+	/* Layout */
+	@apply flex w-full items-center justify-center max-w-full overflow-hidden;
+
+	/* Sizing */
+	@apply xl:max-w-[80%];
+
+	/* Typography */
+	@apply text-center sm:text-lg;
+
+	/* Color */
+	@apply text-[#000000a6];
 }
 
-.gallery__list{
-	@apply flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 lg:h-[600px] lg:overflow-visible pt-10 lg:pt-20 max-w-full overflow-hidden;
+
+.gallery__list {
+	/* Layout */
+	@apply flex snap-x snap-mandatory max-w-full overflow-hidden;
+
+	/* Sizing */
+	@apply max-w-full lg:h-[600px];
+
+	/* Spacing */
+	@apply gap-4 pt-10 pb-2 lg:pt-20;
+
+	/* Overflow */
+	@apply overflow-hidden lg:overflow-visible;
 }
 
-.gallery__item{
-	@apply shrink-0 w-[260px] h-[360px] snap-center overflow-hidden rounded-3xl lg:w-auto lg:h-auto lg:flex-[2] lg:hover:flex-[6] lg:transition-all lg:duration-500 lg:ease-out;
+
+.gallery__item {
+	/* Layout */
+	@apply shrink-0 snap-center;
+
+	/* Sizing */
+	@apply h-[360px] w-[260px] lg:h-auto lg:w-auto;
+
+	/* Appearance */
+	@apply overflow-hidden rounded-3xl;
+
+	/* Responsive */
+	@apply lg:flex-[2];
+	@apply lg:transition-all lg:duration-500 lg:ease-out;
+	@apply lg:hover:flex-[6];
 }
 
-.gallery__image{
-	@apply h-full w-full object-cover;
+
+.gallery__image {
+	/* Sizing */
+	@apply h-full w-full;
+
+	/* Image */
+	@apply object-cover;
 }
