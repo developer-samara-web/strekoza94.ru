@@ -1,0 +1,115 @@
+@reference "../../app/globals.css";
+
+.price {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-5 px-4 py-10;
+}
+
+
+.price__inner {
+	/* Layout */
+	@apply container flex w-full flex-col items-center;
+
+	/* Spacing */
+	@apply gap-16 p-16;
+
+	/* Appearance */
+	@apply rounded-4xl border border-[#7d6adb17] bg-gradient-to-b from-transparent to-[#7d6adb0f];
+}
+
+
+.price__title {
+	/* Layout */
+	@apply flex flex-col items-center;
+
+	/* Spacing */
+	@apply gap-4;
+}
+
+
+.price__description {
+	/* Layout */
+	@apply flex w-full items-center justify-center;
+
+	/* Sizing */
+	@apply xl:max-w-[80%];
+
+	/* Typography */
+	@apply text-center sm:text-lg;
+
+	/* Color */
+	@apply text-[#000000a6];
+}
+
+
+.price__list {
+	/* Layout */
+	@apply container grid grid-cols-1 lg:grid-cols-3;
+
+	/* Spacing */
+	@apply gap-10;
+}
+
+
+.price__item {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-6 p-8;
+
+	/* Appearance */
+	@apply rounded-4xl bg-white;
+
+	/* Effects */
+	@apply transition-all;
+	@apply hover:shadow-[0_0_1px_#8d7bea,0_20px_60px_rgba(125,106,219,.25)];
+
+	/* Interaction */
+	@apply cursor-pointer;
+}
+
+
+.price__name {
+	/* Layout */
+	@apply flex flex-col;
+}
+
+
+.price__value {
+	/* Typography */
+	@apply text-2xl;
+
+	/* Color */
+	@apply text-[#7d6adb] bg-[#7d6adb1c];
+
+	/* Appearance */
+	@apply rounded-full;
+
+	/* Spacing */
+	@apply px-5 py-1;
+}
+
+
+.price__features {
+	/* Layout */
+	@apply flex flex-col w-full;
+
+	/* Spacing */
+	@apply gap-2 pb-3;
+}
+
+
+.price__feature {
+	/* Layout */
+	@apply flex items-center;
+
+	/* Spacing */
+	@apply gap-2 pb-3;
+
+	/* Appearance */
+	@apply border-b border-slate-100 last:border-b-0;
+}
