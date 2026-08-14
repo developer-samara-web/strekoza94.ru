@@ -1,21 +1,76 @@
 @reference "../../app/globals.css";
 
 .hero {
-	@apply py-5 lg:py-20 relative overflow-hidden 2xl:overflow-visible;
+	/* Position */
+	@apply relative;
+
+	/* Spacing */
+	@apply py-5 lg:py-20;
+
+	/* Overflow */
+	@apply overflow-hidden 2xl:overflow-visible;
 }
 
-.hero__inner{
-	@apply flex flex-col items-center justify-center px-3 lg:px-0 w-full gap-4 before:absolute before:right-[-100] before:top-55 before:h-64 before:w-64 before:-translate-y-1/2 before:bg-[url('/images/hero/hero-cloude-1.png')] before:bg-contain before:bg-no-repeat before:content-[''] after:absolute after:left-[-100] after:top-50 after:h-64 after:w-64 after:-translate-y-1/2 after:bg-[url('/images/hero/hero-cloude-2.png')] after:bg-contain after:bg-no-repeat after:content-['']
+
+.hero__inner {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Sizing */
+	@apply w-full;
+
+	/* Spacing */
+	@apply gap-4 px-3 lg:px-0;
+
+	/* Decoration */
+	@apply before:absolute;
+	@apply before:right-[-100] before:top-55;
+	@apply before:h-64 before:w-64;
+	@apply before:-translate-y-1/2;
+	@apply before:bg-[url('/images/hero/hero-cloude-1.png')];
+	@apply before:bg-contain before:bg-no-repeat;
+	@apply before:content-[''];
+
+	@apply after:absolute;
+	@apply after:left-[-100] after:top-50;
+	@apply after:h-64 after:w-64;
+	@apply after:-translate-y-1/2;
+	@apply after:bg-[url('/images/hero/hero-cloude-2.png')];
+	@apply after:bg-contain after:bg-no-repeat;
+	@apply after:content-[''];
+
+	/* Responsive */
+	@apply before:hidden after:hidden;
+	@apply lg:before:block lg:after:block;
 }
 
-.hero__title{
-	@apply text-[30px]/10 lg:text-[70px]/20 font-bold text-center;
+
+.hero__title {
+	/* Sizing */
+	@apply max-w-[900px];
+
+	/* Typography */
+	@apply text-center text-[30px]/10 font-bold;
+	@apply lg:text-[70px]/20;
 }
 
-.hero__description{
-	@apply text-base text-center lg:text-xl mb-4 lg:mb-10;
+
+.hero__description {
+	/* Sizing */
+	@apply z-10 max-w-[900px];
+
+	/* Spacing */
+	@apply mb-4 lg:mb-10;
+
+	/* Typography */
+	@apply text-center text-base lg:text-xl;
 }
 
-.hero__image{
+
+.hero__image {
+	/* Sizing */
+	@apply w-[1200px] max-w-[1400px];
+
+	/* Spacing */
 	@apply pt-10;
 }
