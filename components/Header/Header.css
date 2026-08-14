@@ -1,29 +1,60 @@
 @reference "../../app/globals.css";
 
-.header{
-	@apply flex flex-col justify-center items-center w-full;
+.header {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Sizing */
+	@apply w-full;
 }
 
-.header__inner{
-	@apply flex items-center justify-center w-full border-b border-slate-100;
+
+.header__inner {
+	/* Layout */
+	@apply flex w-full items-center justify-center;
+
+	/* Appearance */
+	@apply border-b border-slate-100;
 }
 
-.header__row{
-	@apply flex items-center justify-between container p-4;
+
+.header__row {
+	/* Layout */
+	@apply container flex items-center justify-between;
+
+	/* Spacing */
+	@apply p-4;
 }
 
-.header__row--bottom{
-	@apply px-4 py-3 lg:px-4 lg:py-0;
+
+.header__row--bottom {
+	/* Spacing */
+	@apply px-4 py-3;
+
+	/* Responsive */
+	@apply lg:px-4 lg:py-0;
 }
 
-.header__content{
-	@apply flex flex-col justify-center items-end;
+
+.header__logo {
+	/* Sizing */
+	@apply h-[30px] w-auto;
 }
 
-.header__address{
+
+.header__content {
+	/* Layout */
+	@apply flex flex-col items-end justify-center;
+}
+
+
+.header__address {
+	/* Typography */
 	@apply text-sm font-medium;
 }
 
-.header__phone{
+
+.header__phone {
+	/* Typography */
 	@apply text-xs;
 }
