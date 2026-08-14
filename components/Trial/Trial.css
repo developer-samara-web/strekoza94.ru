@@ -1,45 +1,105 @@
 @reference "../../app/globals.css";
 
-.trial{
-	@apply px-4 py-10;
+.trial {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-5 px-4 py-10;
 }
 
-.trial__row{
-	@apply grid grid-cols-1 lg:grid-cols-2 justify-center text-center lg:text-left items-center gap-5 container;
+
+.trial__row {
+	/* Layout */
+	@apply container grid grid-cols-1 items-center justify-center lg:grid-cols-2;
+
+	/* Spacing */
+	@apply gap-5;
+
+	/* Typography */
+	@apply text-center lg:text-left;
 }
 
-.trial__image{
-	@apply w-full;
+
+.trial__images {
+	/* Layout */
+	@apply flex w-full items-center justify-center;
 }
 
-.trial__inner{
-	@apply flex flex-col items-center lg:items-start gap-2;
+
+.trial__image {
+	/* Layout */
+	@apply flex items-center;
 }
 
-.trial__text{
-	@apply flex flex-col gap-2;
+
+.trial__inner {
+	/* Layout */
+	@apply flex flex-col items-center lg:items-start;
+
+	/* Spacing */
+	@apply gap-2;
 }
 
-.trial__title{
+
+.trial__text {
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-2;
+}
+
+
+.trial__title {
+	/* Typography */
 	@apply text-4xl font-medium;
 }
 
-.trial__description{
-	@apply text-xl;
+
+.trial__description {
+	/* Typography */
+	@apply text-lg;
+
+	/* Color */
+	@apply text-[#000000a6];
 }
 
-.trial__list{
-	@apply flex flex-col gap-2 py-5;
+
+.trial__list {
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-2 py-5;
 }
 
-.trial-list__item{
-	@apply flex text-lg items-center gap-2;
+
+.trial__list-item {
+	/* Layout */
+	@apply flex items-center;
+
+	/* Spacing */
+	@apply gap-2;
+
+	/* Typography */
+	@apply text-lg;
 }
 
-.trial-list__icon{
-	@apply size-6 text-[#008f3f];
+
+.trial__list-icon {
+	/* Sizing */
+	@apply size-6;
+
+	/* Color */
+	@apply text-[#008f3f];
 }
 
-.trial_actions{
-	@apply flex flex-col lg:flex-row gap-5 pt-10;
+
+.trial__actions {
+	/* Layout */
+	@apply flex flex-col lg:flex-row;
+
+	/* Spacing */
+	@apply gap-5 pt-10;
 }
