@@ -1,0 +1,30 @@
+@reference "../../app/globals.css";
+
+.questions {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-5 px-4 py-10;
+}
+
+
+.questions__inner {
+	/* Layout */
+	@apply container grid grid-cols-1 items-center lg:grid-cols-2;
+
+	/* Spacing */
+	@apply gap-5;
+}
+
+
+.questions__images {
+	/* Layout */
+	@apply flex w-full items-center justify-center;
+}
+
+
+.questions__image {
+	/* Sizing */
+	@apply w-[600px];
+}
