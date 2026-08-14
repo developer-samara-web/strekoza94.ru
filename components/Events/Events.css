@@ -1,29 +1,72 @@
 @reference "../../app/globals.css";
 
-.events{
-	@apply flex flex-col justify-center items-center gap-5 px-4 py-10;
+.events {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-5 px-4 py-10;
 }
 
-.events-item{
-	@apply flex flex-col justify-center items-center gap-2 rounded-4xl p-10 bg-white;
+
+.events-item {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-2 p-10;
+
+	/* Appearance */
+	@apply rounded-4xl bg-white;
+
+	/* Effects */
+	@apply shadow-[0_0_5px_#00000000,0_10px_25px_#00000008] hover:shadow-[0_0_5px_#00000000,0_10px_25px_#fff7e6];
+
+	/* Interaction */
+	@apply cursor-pointer;
 }
 
-.events-item__label{
-	@apply text-xl font-medium text-center;
+
+.events-item__label {
+	/* Typography */
+	@apply text-center text-xl font-medium;
 }
 
-.events-item__heading{
+
+.events-item__heading {
+	/* Typography */
 	@apply text-center;
 }
 
-.events-list{
-	@apply flex flex-col gap-5 lg:gap-6 container bg-[#fff7e6] rounded-4xl p-5 sm:p-10 xl:p-20;
+
+.events-list {
+	/* Layout */
+	@apply container flex flex-col;
+
+	/* Spacing */
+	@apply gap-5 p-5 sm:p-10 xl:p-20;
+
+	/* Appearance */
+	@apply rounded-4xl border border-[#f9e7c1] bg-gradient-to-b from-transparent to-[#fff7e6];
+
+	/* Responsive */
+	@apply lg:gap-6;
 }
 
-.events-list__heading{
-	@apply text-lg lg:text-xl text-center;
+
+.events-list__heading {
+	/* Typography */
+	@apply text-center text-lg;
+
+	/* Color */
+	@apply text-[#000000a1];
 }
 
-.events-grid{
-	@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-16;
+
+.events-grid {
+	/* Layout */
+	@apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+
+	/* Spacing */
+	@apply gap-5 pt-16;
 }
