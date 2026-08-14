@@ -2,26 +2,40 @@
 @import "./fonts.css";
 
 @layer base {
-	* {
-		font-family: "Cera Pro";
+	/* Base */
+	*,
+	*::before,
+	*::after {
 		box-sizing: border-box;
 	}
 
-	body{
-		background-color: #00000003;
+
+	/* Typography */
+	html {
+		scroll-behavior: smooth;
 	}
 
-	.wrapper{
-		@apply flex flex-col justify-center items-center;
+
+	body {
+		@apply bg-[#00000003];
+
+		font-family: "Cera Pro";
 	}
 
+
+	/* Layout */
+	.wrapper {
+		@apply flex flex-col items-center justify-center;
+	}
+
+
+	/* Scrollbar */
 	::-webkit-scrollbar {
-		width: 2px;
-		height: 2px;
+		@apply h-0.5 w-0.5;
 	}
+
 
 	::-webkit-scrollbar-button {
-		width: 2px;
-		height: 2px;
+		@apply h-0.5 w-0.5;
 	}
 }
