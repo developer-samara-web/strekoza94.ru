@@ -1,21 +1,58 @@
 @reference "../../../app/globals.css";
 
-.button{
-	@apply uppercase font-medium cursor-pointer;
+.button {
+	/* Layout */
+	@apply flex flex-row items-center justify-center z-10 cursor-pointer;
+
+	/* Spacing */
+	@apply px-8 py-4;
+
+	/* Typography */
+	@apply text-white font-medium uppercase;
+
+	/* Appearance */
+	@apply rounded-full border;
+
+	/* Interaction */
+	@apply transition-all;
+	@apply active:translate-y-[4px];
+	@apply active:shadow-[0_1px_0_#5b48b4];
 }
+
+
+/* Sizes */
 
 .button-sm {
-	@apply py-2 px-6 text-xs rounded-[10px];
+	@apply rounded-[50px] border-none gap-2 px-6 py-2 text-xs;
+	@apply shadow-none;
+	@apply active:translate-none active:shadow-none;
 }
+
 
 .button-md {
-	@apply py-4 px-10 text-sm rounded-[15px];
+	@apply rounded-[50px] px-10 py-4 gap-3 text-sm;
+	@apply shadow-[0_5px_0_#5b48b4,0_10px_25px_rgba(93,72,180,.45)];
 }
 
-.button-primary{
-	@apply bg-[#7d6adb] text-white hover:bg-[#6e5cc9];
+
+/* Variants */
+
+.button-primary {
+	@apply border-[#9d8ef0];
+	@apply bg-gradient-to-b from-[#8d7bea] to-[#715ed2];
+	@apply hover:to-[#5b48b4];
 }
 
-.button-secondary{
-	@apply bg-[#7d6adb0d] text-[#7d6adb] hover:bg-[#7d6adb26];
+
+.button-secondary {
+	@apply border-[#8d7bea] bg-white text-[#7d6adb];
+	@apply shadow-[0_5px_0_#8d7bea,0_10px_25px_rgba(125,106,219,.25)];
+}
+
+
+.button-success {
+	@apply border-[#7ec4e1];
+	@apply bg-gradient-to-b from-[#7bc1ea] to-[#5ea9d2];
+	@apply shadow-[0_5px_0_#5998bd,0_10px_25px_#5998bd];
+	@apply hover:to-[#5395bb];
 }

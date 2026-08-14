@@ -1,17 +1,62 @@
 @reference "../../../app/globals.css";
 
 .navbar {
-	@apply hidden lg:flex flex-row gap-5;
+	/* Layout */
+	@apply hidden flex-row gap-5 lg:flex;
 }
 
-.navbar__item{
-	@apply uppercase text-xs font-semibold text-[#0000009c] py-4 mt-px hover:text-[#7d6adb] hover:border-b hover:border-[#7d6adb] hover:mb-[-1px];
+
+.navbar__item {
+	/* Spacing */
+	@apply mt-px py-4;
+
+	/* Typography */
+	@apply text-xs font-semibold uppercase;
+
+	/* Color */
+	@apply text-[#0000009c];
+
+	/* Interaction */
+	@apply hover:mb-[-1px];
+	@apply hover:border-b hover:border-[#7d6adb];
+	@apply hover:text-[#7d6adb];
 }
 
-.navbar-mobile{
-	@apply flex flex-col z-10 lg:hidden absolute left-0 top-30 w-full bg-white p-4 rounded-b-2xl;
+
+.navbar-mobile {
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Position */
+	@apply absolute left-0 top-30 z-10;
+
+	/* Sizing */
+	@apply w-full;
+
+	/* Spacing */
+	@apply p-4;
+
+	/* Appearance */
+	@apply rounded-b-2xl bg-white;
+
+	/* Responsive */
+	@apply lg:hidden;
 }
 
-.navbar-mobile__button{
-	@apply flex lg:hidden text-slate-900 bg-slate-100 rounded-lg p-2;
+
+.navbar-mobile__button {
+	/* Layout */
+	@apply flex;
+
+	/* Spacing */
+	@apply p-2;
+
+	/* Appearance */
+	@apply rounded-lg bg-slate-100;
+
+	/* Color */
+	@apply text-slate-900;
+
+	/* Responsive */
+	@apply lg:hidden;
 }

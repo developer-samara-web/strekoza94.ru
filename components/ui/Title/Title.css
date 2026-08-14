@@ -1,13 +1,45 @@
 @reference "../../../app/globals.css";
 
-.section-title{
-	@apply flex flex-col items-center justify-center lg:gap-2;
+.section__title {
+	/* Layout */
+	@apply relative flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-4;
 }
 
 .section-title__label{
-	@apply font-bold uppercase text-xs lg:text-sm;
+	/* Layout */
+	@apply flex items-center;
+
+	/* Spacing */
+	@apply gap-3;
 }
 
-.section-title__heading{
-	@apply font-medium text-center text-2xl sm:text-2xl lg:text-4xl;
+.section-title__badge{
+	/* Layout */
+	@apply inline-block shadow-md;
+
+	/* Spacing */
+	@apply px-5 py-2 rounded-full;
+
+	/* Typography */
+	@apply text-xs font-bold uppercase tracking-wide text-white;
+}
+
+.section-title__label {
+	/* Spacing */
+	@apply rounded-2xl px-4 py-1;
+
+	/* Typography */
+	@apply text-xs font-bold uppercase lg:text-sm;
+
+	/* Color */
+	@apply text-white;
+}
+
+
+.section-title__heading {
+	/* Typography */
+	@apply text-center text-2xl font-medium lg:text-4xl;
 }

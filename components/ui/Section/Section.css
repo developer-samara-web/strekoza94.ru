@@ -1,5 +1,24 @@
 @reference "../../../app/globals.css";
 
-.section{
-	@apply flex flex-col items-center justify-center w-full py-16;
+.section {
+	/* Layout */
+	@apply flex w-full flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply py-16;
+}
+
+
+.section__text {
+	/* Layout */
+	@apply container flex w-full items-center justify-center;
+
+	/* Sizing */
+	@apply xl:max-w-[40%];
+
+	/* Typography */
+	@apply text-center sm:text-lg;
+
+	/* Color */
+	@apply text-[#000000a6];
 }

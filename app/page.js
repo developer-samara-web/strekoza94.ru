@@ -6,7 +6,7 @@ import Pricing from "@/components/Pricing/Pricing";
 import Gallery from "@/components/Gallery/Gallery";
 import Trial from "@/components/Trial/Trial";
 import Questions from "@/components/Questions/Questions";
-import Contact from "@/components/Contact/Contact";
+import Contacts from "@/components/Contacts/Contacts";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
@@ -23,9 +23,9 @@ const Home = () => {
 			<Events />
 			<Trial />
 			<Gallery />
-			<Pricing />
 			<Questions />
-			<Contact />
+			<Pricing />
+			<Contacts />
 			<Footer />
 		</main>
 	);
