@@ -6,9 +6,6 @@
 			],
 			"@/components/*": [
 				"./components/*"
-			],
-			"@/lib/*": [
-				"./lib/*"
 			]
 		}
 	}
