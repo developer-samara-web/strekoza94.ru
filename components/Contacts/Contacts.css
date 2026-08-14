@@ -1,0 +1,150 @@
+@reference "../../app/globals.css";
+
+.contacts {
+	/* Layout */
+	@apply flex flex-col items-center justify-center;
+
+	/* Spacing */
+	@apply gap-5 p-16;
+
+	/* Sizing */
+	@apply w-full;
+}
+
+
+.contacts__inner {
+	/* Layout */
+	@apply container grid grid-cols-1 lg:grid-cols-[4fr_2fr];
+
+	/* Spacing */
+	@apply gap-10 p-10;
+
+	/* Position */
+	@apply relative;
+
+	/* Appearance */
+	@apply rounded-3xl border border-slate-100 bg-slate-50;
+}
+
+
+.contacts__image {
+	/* Position */
+	@apply relative;
+
+	/* Spacing */
+	@apply p-4;
+
+	/* Appearance */
+	@apply rounded-3xl bg-white;
+
+	/* Effects */
+	@apply shadow-[0_0_0_#000000,0_5px_15px_#00000015];
+
+	/* Decoration */
+	@apply before:absolute;
+	@apply before:left-1/3 before:top-[-50px];
+	@apply before:h-40 before:w-40;
+	@apply before:bg-[url('/images/contacts/element-2.png')];
+	@apply before:bg-contain before:bg-no-repeat;
+	@apply before:content-[''];
+	@apply lg:before:left-[-70] lg:before:top-[-100px];
+	@apply lg:before:h-90 lg:before:w-90;
+}
+
+
+.contacts__picture {
+	/* Sizing */
+	@apply w-full;
+
+	/* Appearance */
+	@apply rounded-2xl border border-slate-100;
+}
+
+
+.contacts__items {
+	/* Layout */
+	@apply flex flex-col;
+
+	/* Spacing */
+	@apply gap-5 p-10;
+
+	/* Position */
+	@apply relative;
+
+	/* Appearance */
+	@apply rounded-3xl bg-white;
+
+	/* Effects */
+	@apply shadow-[0_0_0_#000000,0_5px_15px_#00000015];
+
+	/* Decoration */
+	@apply before:absolute;
+	@apply before:right-[-150] before:bottom-5;
+	@apply before:h-90 before:w-90;
+	@apply before:bg-[url('/images/contacts/element-1.png')];
+	@apply before:bg-contain before:bg-no-repeat;
+	@apply before:content-[''];
+}
+
+
+.contacts__item {
+	/* Layout */
+	@apply flex flex-row items-center;
+
+	/* Spacing */
+	@apply gap-5;
+}
+
+
+.contacts__content {
+	/* Layout */
+	@apply flex flex-col;
+}
+
+
+.contacts__title {
+	/* Typography */
+	@apply text-sm font-medium uppercase;
+}
+
+
+.contacts__description {
+	/* Typography */
+	@apply text-sm;
+}
+
+
+.contacts__icon {
+	/* Spacing */
+	@apply p-3;
+
+	/* Appearance */
+	@apply rounded-2xl border;
+}
+
+
+/* Colors */
+
+.contacts__icon--blue {
+	@apply border-[#6db9e554] bg-[#6db9e512] text-[#6db9e5];
+}
+
+
+.contacts__icon--orange {
+	@apply border-[#d18e0054] bg-[#d18e0012] text-[#d18e00];
+}
+
+
+.contacts__icon--green {
+	@apply border-[#008f3f54] bg-[#008f3f12] text-[#008f3f];
+}
+
+
+.contacts__icon--red {
+	@apply border-[#ff3d6e54] bg-[#ff3d6e12] text-[#ff3d6e];
+}
+
+
+.contacts__icon--violet {
+	@apply border-[#7d6adb54] bg-[#7d6adb12] text-[#7d6adb];
+}
