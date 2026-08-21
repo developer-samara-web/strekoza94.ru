@@ -1,0 +1,120 @@
+@reference "../../app/globals.css";
+
+.modal {
+	/* Layout */
+	@apply fixed inset-0 z-50 flex items-center justify-center;
+
+	/* Spacing */
+	@apply p-4;
+}
+
+.modal__overflow {
+	/* Layout */
+	@apply absolute inset-0;
+
+	/* Appearance */
+	@apply cursor-default bg-black/50 backdrop-blur-sm;
+}
+
+.modal__inner {
+	/* Layout */
+	@apply relative z-10 w-full max-w-md;
+
+	/* Spacing */
+	@apply p-6 sm:p-8;
+
+	/* Appearance */
+	@apply rounded-3xl bg-white shadow-2xl;
+}
+
+.modal__close {
+	/* Layout */
+	@apply absolute right-4 top-4 flex size-9 items-center justify-center;
+
+	/* Appearance */
+	@apply cursor-pointer rounded-full text-2xl text-gray-400 transition;
+
+	/* States */
+	@apply hover:bg-gray-100 hover:text-gray-700;
+}
+
+.modal__title {
+	/* Layout */
+	@apply pr-8;
+
+	/* Typography */
+	@apply text-3xl font-bold text-[#312862];
+}
+
+.modal__description {
+	/* Spacing */
+	@apply mt-2;
+
+	/* Typography */
+	@apply text-sm text-gray-500;
+}
+
+.modal__services {
+	/* Spacing */
+	@apply mt-6 p-4;
+
+	/* Appearance */
+	@apply rounded-2xl bg-[#7d6adb]/10;
+}
+
+.modal__service-title {
+	/* Typography */
+	@apply text-xs font-medium uppercase tracking-wide text-[#7d6adb];
+}
+
+.modal__service-name {
+	/* Spacing */
+	@apply mt-1;
+
+	/* Typography */
+	@apply font-semibold text-[#312862];
+}
+
+.modal__form {
+	/* Layout */
+	@apply space-y-4;
+
+	/* Spacing */
+	@apply mt-5;
+}
+
+.modal__label {
+	/* Layout */
+	@apply mb-1.5 block;
+
+	/* Typography */
+	@apply text-sm font-medium text-[#312862];
+}
+
+.modal__input {
+	/* Layout */
+	@apply w-full;
+
+	/* Spacing */
+	@apply px-4 py-3;
+
+	/* Appearance */
+	@apply rounded-xl border border-gray-200 outline-none transition;
+
+	/* Typography */
+	@apply placeholder:text-gray-400;
+
+	/* States */
+	@apply focus:border-[#7d6adb] focus:ring-2 focus:ring-[#7d6adb]/20;
+}
+
+.modal__info {
+	/* Layout */
+	@apply text-center;
+
+	/* Spacing */
+	@apply mt-4;
+
+	/* Typography */
+	@apply text-xs leading-relaxed text-gray-400;
+}

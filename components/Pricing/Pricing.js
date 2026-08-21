@@ -3,13 +3,14 @@ import "@/components/Pricing/Pricing.css";
 import Title from "@/ui/Title/Title";
 import Section from "@/ui/Section/Section";
 import PricingList from "@/components/Pricing/PricingList";
+import { useModal } from '@/components/Modal/ModalProvider';
 
 const Pricing = () => {
 
 	const { header, items } = {
 		header: {
 			title: 'Абонементы',
-			description: 'Выберите удобный формат посещения',
+			description: 'Форматы посещения',
 			text: 'Выберите подходящий вариант для вашей семьи: познакомьтесь с центром на пробном посещении, оформите абонемент или доверьте нам организацию яркого детского праздника.',
 			background: 'bg-[#7d6adb]',
 			color: 'text-[#7d6adb]',
@@ -27,7 +28,7 @@ const Pricing = () => {
 				],
 				button: {
 					text: 'Записаться бесплатно',
-					url: '#',
+					service: 'Знакомство с клубом',
 				},
 			},
 			{
@@ -42,7 +43,7 @@ const Pricing = () => {
 				],
 				button: {
 					text: 'Оформить абонемент',
-					url: '#',
+					service: 'Абонимент на месяц',
 				},
 			},
 			{
@@ -57,7 +58,7 @@ const Pricing = () => {
 				],
 				button: {
 					text: 'Забронировать праздник',
-					url: '#',
+					service: 'Праздник под ключ',
 				},
 			},
 		],

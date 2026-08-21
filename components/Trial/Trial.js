@@ -32,13 +32,15 @@ const Trial = () => {
 		],
 		buttons: [
 			{
+				type: 'modal',
 				title: "Записаться бесплатно",
 				className: "button button-md button-primary",
 				icon: <GiftIcon className="size-4" />,
 				iconPosition: "left",
-				url: "#"
+				service: "Знакомство с клубом"
 			},
 			{
+				type: 'link',
 				title: "Продолжить знакомство",
 				className: "button button-md button-secondary",
 				icon: <ArrowLongRightIcon className="size-5" />,
@@ -61,8 +63,8 @@ const Trial = () => {
 					</div>
 					<TrialList list={items} />
 					<div className="trial__actions">
-						{buttons && buttons.map(({ title, className, url, icon, iconPosition }, id) => (
-							<Button key={id} type="link" className={className} icon={icon} iconPosition={iconPosition} url={url} text={title} />
+						{buttons && buttons.map(({ title, className, url, icon, type, service, iconPosition }, id) => (
+							<Button key={id} type={type} className={className} icon={icon} iconPosition={iconPosition} url={url} text={title} service={service} />
 						))}
 					</div>
 				</div>

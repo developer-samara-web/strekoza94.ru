@@ -1,9 +1,15 @@
 import "./globals.css";
 
+import { ModalProvider } from "@/components/Modal/ModalProvider";
+
 const RootLayout = ({ children }) => {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				<ModalProvider>
+					{children}
+				</ModalProvider>
+			</body>
 		</html>
 	);
 }
