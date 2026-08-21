@@ -26,5 +26,5 @@
 
 .questions__image {
 	/* Sizing */
-	@apply w-[600px];
+	@apply lg:w-[600px];
 }

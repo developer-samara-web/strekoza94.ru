@@ -2,6 +2,7 @@ import "@/components/Footer/Footer.css";
 
 import Image from "next/image";
 import Link from "next/link";
+import { DocumentTextIcon } from '@heroicons/react/24/solid';
 
 const Footer = () => {
 	const { info, socials, links } = {
@@ -59,7 +60,7 @@ const Footer = () => {
 
 					<div className="footer__links">
 						{links && links.map(({ name, url }, id) => (
-							<Link key={id} href={url} className="footer__link">{name}</Link>
+							<Link key={id} href={url} className="footer__link">{name} <DocumentTextIcon className="size-3" /></Link>
 						))}
 					</div>
 

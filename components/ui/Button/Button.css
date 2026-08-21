@@ -30,7 +30,7 @@
 
 
 .button-md {
-	@apply rounded-[50px] px-10 py-4 gap-3 text-sm;
+	@apply rounded-[50px] px-2 lg:px-10 py-4 gap-3 text-sm;
 	@apply shadow-[0_5px_0_#5b48b4,0_10px_25px_rgba(93,72,180,.45)];
 }
 

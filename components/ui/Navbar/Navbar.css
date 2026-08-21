@@ -28,7 +28,7 @@
 	@apply flex flex-col;
 
 	/* Position */
-	@apply absolute left-0 top-30 z-10;
+	@apply absolute left-0 top-30 z-99;
 
 	/* Sizing */
 	@apply w-full;

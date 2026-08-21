@@ -98,7 +98,7 @@
 
 .trial__actions {
 	/* Layout */
-	@apply flex flex-col lg:flex-row;
+	@apply flex flex-col sm:flex-row lg:flex-row;
 
 	/* Spacing */
 	@apply gap-5 pt-10;

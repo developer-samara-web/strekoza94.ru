@@ -2,7 +2,7 @@
 
 .gallery {
 	/* Layout */
-	@apply flex flex-col items-center justify-center;
+	@apply flex flex-col items-center justify-center max-w-full;
 
 	/* Spacing */
 	@apply gap-5 px-4 py-10;

@@ -35,7 +35,7 @@
 
 .footer__description {
 	/* Sizing */
-	@apply w-full lg:w-90;
+	@apply w-full sm:max-w-[80%] lg:w-90;
 
 	/* Typography */
 	@apply text-center text-sm lg:text-left text-[#00000090];
@@ -81,22 +81,22 @@
 
 .footer__social img {
 	/* Sizing */
-	@apply h-full w-full object-contain;
+	@apply h-full w-full object-contain saturate-75 hover:saturate-100;
 }
 
 
 .footer__links {
 	/* Layout */
-	@apply flex flex-col items-center lg:items-end;
+	@apply flex flex-col sm:flex-row lg:flex-col items-center lg:items-end;
 
 	/* Spacing */
-	@apply gap-1;
+	@apply gap-1 sm:gap-4 lg:gap-2;
 }
 
 
 .footer__link {
 	/* Typography */
-	@apply text-xs text-[#715ed2] hover:underline;
+	@apply flex flex-row gap-2 items-center text-xs text-[#715ed2] bg-[#7d6adb0a] px-3 py-1 rounded-2xl hover:bg-[#7d6adb24];
 }
 
 

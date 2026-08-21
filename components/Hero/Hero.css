@@ -2,13 +2,13 @@
 
 .hero {
 	/* Position */
-	@apply relative;
+	@apply flex flex-col items-center justify-center relative;
 
 	/* Spacing */
 	@apply py-5 lg:py-20;
 
 	/* Overflow */
-	@apply overflow-hidden 2xl:overflow-visible;
+	@apply overflow-hidden max-w-full 2xl:overflow-visible;
 }
 
 
@@ -47,29 +47,29 @@
 
 .hero__title {
 	/* Sizing */
-	@apply max-w-[900px];
+	@apply max-w-[90%] sm:max-w-[80%] md:max-w-[60%] lg:max-w-[900px];
 
 	/* Typography */
-	@apply text-center text-[30px]/10 font-bold;
-	@apply lg:text-[70px]/20;
+	@apply text-center font-bold;
+	@apply text-[26px]/8 sm:text-[40px]/10 lg:text-[70px]/20;
 }
 
 
 .hero__description {
 	/* Sizing */
-	@apply z-10 max-w-[900px];
+	@apply z-10 max-w-[80%] lg:max-w-[900px];
 
 	/* Spacing */
 	@apply mb-4 lg:mb-10;
 
 	/* Typography */
-	@apply text-center text-base lg:text-xl;
+	@apply text-center text-base sm:text-lg lg:text-xl;
 }
 
 
 .hero__image {
 	/* Sizing */
-	@apply w-[1200px] max-w-[1400px];
+	@apply max-w-[370px] sm:max-w-[500px] object-center lg:max-w-[1400px];
 
 	/* Spacing */
 	@apply pt-10;

@@ -1,7 +1,13 @@
+'use client'
+
 import "./Button.css";
 import Link from "next/link";
 
-const Button = ({ type, className, text, url, icon, iconPosition = 'right', }) => {
+import { useModal } from '@/components/Modal/ModalProvider';
+
+const Button = ({ type, className, text, url, icon, iconPosition = 'right', service }) => {
+	const { openModal } = useModal()
+
 	const content = (
 		<>
 			{icon && iconPosition === 'left' && icon}
@@ -15,6 +21,14 @@ const Button = ({ type, className, text, url, icon, iconPosition = 'right', }) =
 			<Link href={url} className={className}>
 				{content}
 			</Link>
+		);
+	}
+
+	if (type === 'modal') {
+		return (
+			<button onClick={() => openModal(service)} className={className}>
+				{content}
+			</button>
 		);
 	}
 

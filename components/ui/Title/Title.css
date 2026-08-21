@@ -24,7 +24,7 @@
 	@apply px-5 py-2 rounded-full;
 
 	/* Typography */
-	@apply text-xs font-bold uppercase tracking-wide text-white;
+	@apply text-xs font-bold uppercase tracking-wide text-center text-white;
 }
 
 .section-title__label {
@@ -41,5 +41,5 @@
 
 .section-title__heading {
 	/* Typography */
-	@apply text-center text-2xl font-medium lg:text-4xl;
+	@apply text-center text-3xl font-medium lg:text-4xl;
 }
