@@ -47,7 +47,7 @@ const Header = () => {
 		<Section className="header">
 			<div className="header__inner">
 				<div className="header__row">
-					<Image className="header__logo" src="/images/logo.png" width={208} height={40} loading="eager" alt="logo" />
+					<Image className="header__logo" src="/images/logo.webp" width={208} height={40} loading="eager" alt="logo" />
 					<div className="header__content">
 						<span className="header__address">{contacts.address}</span>
 						<span className="header__phone">{contacts.phone}</span>

@@ -26,7 +26,7 @@ const Hero = () => {
 				<div className="hero__description">{header.description}</div>
 				<Button type={button.type} className="button button-md button-primary" url={button.url} text={button.name} icon={button.icon} />
 			</div>
-			<Image className="hero__image" src="/images/hero/hero.png" width="1926" height="816" loading="eager" alt="Учитесь и развивайтесь - каждый день!" />
+			<Image className="hero__image" src="/images/hero/hero.webp" width="1926" height="816" loading="eager" alt="Учитесь и развивайтесь - каждый день!" />
 		</Section>
 	);
 }

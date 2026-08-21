@@ -45,7 +45,7 @@
 	@apply before:absolute;
 	@apply before:left-1/3 before:top-[-50px];
 	@apply before:h-40 before:w-40;
-	@apply before:bg-[url('/images/contacts/element-2.png')];
+	@apply before:bg-[url('/images/contacts/element-2.webp')];
 	@apply before:bg-contain before:bg-no-repeat;
 	@apply before:content-[''];
 	@apply lg:before:left-[-70] lg:before:top-[-100px];
@@ -83,7 +83,7 @@
 	@apply before:absolute;
 	@apply before:right-[-150] before:bottom-5;
 	@apply before:h-90 before:w-90;
-	@apply before:bg-[url('/images/contacts/element-1.png')];
+	@apply before:bg-[url('/images/contacts/element-1.webp')];
 	@apply before:bg-contain before:bg-no-repeat;
 	@apply before:content-[''];
 }

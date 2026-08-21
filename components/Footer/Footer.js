@@ -8,24 +8,24 @@ const Footer = () => {
 	const { info, socials, links } = {
 		info: {
 			name: "Стрекоза",
-			logo: "/images/logo.png",
+			logo: "/images/logo.webp",
 			description: "Сделайте обучение детей увлекательным и интерактивным с помощью интересных уроков, игр и творческих занятий.",
 			copyright: "Copyright © 2018-2025 «Стрекоза»"
 		},
 		socials: [
 			{
 				name: "Instagram",
-				image: "/images/footer/instagram.png",
+				image: "/images/footer/instagram.webp",
 				url: "/"
 			},
 			{
 				name: "Vkontakte",
-				image: "/images/footer/vkontakte.png",
+				image: "/images/footer/vkontakte.webp",
 				url: "/"
 			},
 			{
 				name: "Telegram",
-				image: "/images/footer/telegram.png",
+				image: "/images/footer/telegram.webp",
 				url: "/"
 			}
 		],

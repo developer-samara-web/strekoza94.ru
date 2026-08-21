@@ -40,7 +40,7 @@ const Questions = () => {
 	return (
 		<Section id="questions" className="questions" header={header}>
 			<div className="questions__inner">
-				<Image className="questions__image" src="/images/questions/questions-section.png" width={1402} height={1122} alt={header.title} />
+				<Image className="questions__image" src="/images/questions/questions-section.webp" width={1402} height={1122} alt={header.title} />
 				<QuestionsList list={items} />
 			</div>
 		</Section>

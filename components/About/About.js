@@ -19,7 +19,7 @@ const About = () => {
 				color: 'text-[#7d6adb]',
 				background: '#7d6adb0d',
 				border: '#7d6adb1a',
-				image: '/images/about/1.png'
+				image: '/images/about/1.webp'
 			},
 			{
 				title: 'Творческие развлечения',
@@ -27,7 +27,7 @@ const About = () => {
 				color: 'text-[#0280ce]',
 				background: '#0280ce0d',
 				border: '#0280ce1a',
-				image: '/images/about/2.png'
+				image: '/images/about/2.webp'
 			},
 			{
 				title: 'Комфорт для родителей',
@@ -35,7 +35,7 @@ const About = () => {
 				color: 'text-[#008f3f]',
 				background: '#008f3f0d',
 				border: '#008f3f1a',
-				image: '/images/about/3.png'
+				image: '/images/about/3.webp'
 			}
 		]
 	}

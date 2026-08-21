@@ -52,7 +52,7 @@ export default function Contacts() {
 		<Section className="contacts" header={header}>
 			<div className="contacts__inner">
 				<div className="contacts__image">
-					<Image className="contacts__picture" src="/images/contacts/element-map.png" width={910} height={380} loading="eager" alt="" />
+					<Image className="contacts__picture" src="/images/contacts/element-map.webp" width={910} height={380} loading="eager" alt="" />
 				</div>
 				<ContactsList items={items} />
 			</div>

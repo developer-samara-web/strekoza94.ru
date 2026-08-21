@@ -54,7 +54,7 @@ const Trial = () => {
 		<Section id="trial" className="trial">
 			<div className="trial__row">
 				<div className="trial__images">
-					<Image className="trial__image" src="/images/trial/trial-section.png" width={600} height={500} alt={header.title} />
+					<Image className="trial__image" src="/images/trial/trial-section.webp" width={600} height={500} alt={header.title} />
 				</div>
 				<div className="trial__inner">
 					<div className="trial__text">

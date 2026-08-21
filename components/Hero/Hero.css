@@ -27,7 +27,7 @@
 	@apply before:right-[-100] before:top-55;
 	@apply before:h-64 before:w-64;
 	@apply before:-translate-y-1/2;
-	@apply before:bg-[url('/images/hero/hero-cloude-1.png')];
+	@apply before:bg-[url('/images/hero/hero-cloude-1.webp')];
 	@apply before:bg-contain before:bg-no-repeat;
 	@apply before:content-[''];
 
@@ -35,7 +35,7 @@
 	@apply after:left-[-100] after:top-50;
 	@apply after:h-64 after:w-64;
 	@apply after:-translate-y-1/2;
-	@apply after:bg-[url('/images/hero/hero-cloude-2.png')];
+	@apply after:bg-[url('/images/hero/hero-cloude-2.webp')];
 	@apply after:bg-contain after:bg-no-repeat;
 	@apply after:content-[''];
 
